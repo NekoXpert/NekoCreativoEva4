@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo de la web en la pestaña -->
+    <title>Neko Creativo</title>
+    <!-- favicon, icono queva al costado del <title> -->
+    <link rel="shorcut icon" href="nkfavicon.ico">
+    <link href="nekocreativo.css" rel="stylesheet" type="text/css">
+<script src="nekocreativo.js" language="javascript" type="text/javascript"></script>
+   
+</head>
+
+
+<header>
+    <!-- logo neko creativo -->
+    <img src="logonekocreativo.png" width="20%" alt="Logo Neko Creativo" align="left">
+   
+    <!-- menu con imagenes y enlaces de forma horizontal -->
+      <nav>
+    
+        <br>
+        <a href="index.html" target="blank"><img src="menu/inicio.png" width="15%"></a>
+  <a href="servicios.html" target="blank"><img src="menu/servicios.png" width="15%"></a>
+  <a href="productos.html" target="blank"><img src="menu/productos.png" width="15%"></a>
+  <a href="testimonios.html" target="blank"><img src="menu/testimonios.png" width="15%"></a>
+  <a href="contactanos.html" target="blank"><img src="menu/contactanos.png" width="15%"></a>
+  
+  
+  </nav>
+  
+  <!-- linea con color naranja -->
+  <hr color="orange">
+  
+  <table align="right" border="0">
+    <tr>
+      
+      <td><form method="get" action="https://www.google.com/search" target="blank">
+    <input  class="buscadores" type="search" name="q" placeholder="Mouse, Memoria, etc." autofocus required>
+    <input  class="search" type="submit" value="Buscar"> 
+    </form></td>
+   
+  </tr>
+  <td align="right"><font color="0071bc"> &#9997; &#9742; </font> <font face="calibri" size="4" color="#fff"><b>+51 912 896 572</b></font></td></tr>
+  
+  
+  
+    </table>
+  </header>
+
+<!-- cuerpo-->
+<body>
+  <p>¡Bienvenido(a) a Neko Creativo!</p>
+  <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <source src="videos/rain.mp4" type="video/mp4">
+  </video>
+  <div>
+ <audio id="mp3" controls autoplay>
+    <source src="audio/howdeep.mp3" type="audio/mpeg">
+  
+    </audio>
+<script>document.getElementById("mp3").volume = 0.01;</script></div>
+  
+ 
+    <br>
+    <br>
+
+
+<!-- CAMBIAR -->
+
+<div>
+  <form id="formb" form action="https://docs.google.com/forms/d/e/1FAIpQLSfmkex1H-Ebrfgz7Eb1gl1bR7vXFQ30WQ2UfO4s8vA-XcpeQw/formResponse" target="blank" method="post">
+    <h1>LIBRO DE RECLAMACIONES</h1>
+    <h2>DATOS GENERALES</h2>
+    
+ 
+
+<h5 class="txt">Razon Social: <b>NEKO CREATIVO</b></h5>
+<h5 class="txt">RUC: <b> 2XXXXXXXXXX</b></h5>
+<h5 class="txt">Dirección: <b> AV. MI DIRECCION N° 2021 SURCO</b></h5>
+<p id="date-client"></p>
+<script>
+  const d = new Date();
+  document.getElementById("date-client").innerHTML = d;
+  </script>
+  <div class="contentform">
+    <div id="sendmessage"> Tu mensaje se ha enviado, satisfactoriamente, gracias. </div>
+
+
+    <div class="form-group">
+            <p>Nombre & Apellidos<span>*</span></p>
+            <span class="icon-case"><i class="fa fa-male"></i></span>
+              <input class="inputb" placeholder="Tus Nombres" type="text" name="entry.1645294440" id="nom" maxlenght="30" data-rule="required" />
+           
+    </div> 
+    
+    <div class="form-group">
+      <p>Tipo de Documento<span>*</span></p>
+      <select class="icon-case2" name="document_type"><option class="icon-case2" name="entry.1976423161" value="Dni"data-rule="required">DNI</option>
+
+<option class="icon-case2" value="CarnetExt" name="entry.1976423161">Carnet de Extranjería</option>
+<option class="icon-case2" value="Ruc" name="entry.1976423161">RUC</option>
+</select>
+
+
+
+
+  </div><br>
+  
+    <div class="form-group">
+          <p>Número<span>*</span></p>
+          <span class="icon-case"><i class="fa fa-user"></i></span>
+      <input class="inputb" placeholder="Número" type="number" name="entry.386495367" id="prenom" maxlenght="30" data-rule="required"/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>Correo electrónico<span>*</span></p>	
+    <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+              <input class="inputb" placeholder="Escribe tu correo @" type="email" name="entry.1108442886" id="email" maxlenght="50" data-rule="required"/>
+              <div class="validation"></div>
+    </div>	
+
+    <div class="form-group">
+    <p>Telefono<span>*</span></p>
+    <span class="icon-case"><i class="fa fa-home"></i></span>
+      <input class="inputb" placeholder="### ### ###" type="number" name="entry.2012081272" id="society" data-rule="required"/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+      <p>Dirección<span>*</span></p>
+      <span class="icon-case"><i class="fa fa-home"></i></span>
+        <input class="inputb" placeholder="### ### ###" type="text" name="entry.900404666" id="society" data-rule="required"/>
+                <div class="validation"></div>
+      </div>
+<br>
+      <div class="form-group">
+        <p>Identificación del bien contratado</p>
+        <p>Tipo de Servicio<span>*</span></p>
+        <select class="icon-case2" name="document_type"><option class="icon-case2" name="entry.1968023166" value="Servicio"data-rule="required">SERVICIO</option>
+  
+  <option class="icon-case2" value="CarnetExt" name="entry.1968023166">PRODUCTO</option>
+  </select>
+  
+  
+  
+  
+    </div>
+<br>
+
+    <div class="form-group">
+   
+    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+      <textarea class="inputb" placeholder="Describir el servicio o producto.." type="text" name="entry.2103916149" id="adresse"></textarea>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>¿Cuando lo adquiriste?<span>*</span></p>
+
+    <br>
+      <input  type="radio" name="date" id="Hace 72 horas" value="Hace 72 horas" data-rule="required"/>
+      <label for="Hace 72 horas" >Hace 72 horas</label><br>
+      <input  type="radio" name="date" id="Una Semana" value="Una Semana" data-rule="required"/>
+      <label for="Una Semana" >Una Semana</label><br>
+      <input  type="radio" name="date" id="Más de un mes" value="Más de un mes" data-rule="required"/>
+      <label for="Más de un mes" >Más de un mes</label> <br>
+    </div>
+    
+<br>
+
+    <div class="form-group">
+      
+     
+      <p> Queja: Disconformidad no relacionada a los productos, <br>servicios, malestar o descontento respecto  a la atención <br>al publico.</p>
+<p> Reclamo: Disconformidad relacionada <br>a los productos o servicios.</p>
+<br>
+<p>Detalle de la Reclamación<span>*</span></p>
+      <select class="icon-case2" name="document_type"><option class="icon-case2" name="entry.1976423161" value="Servicio"data-rule="required">RECLAMO</option>
+
+<option class="icon-case2" value="CarnetExt" name="entry.1976423161">QUEJA</option>
+</select>
+
+
+
+
+  </div>
+<br>
+
+  <div class="form-group">
+
+  <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+    <textarea class="inputb" placeholder="Describe tu reclamo o Queja.." type="text" name="entry.270362831" id="adresse"></textarea>
+            <div class="validation"></div>
+  </div>
+
+
+    <br>
+ 
+ 
+
+
+
+</div>
+<!-- save data
+<div class="rightcontact">	
+
+    <div class="form-group">
+    <p>Ciudad <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-building-o"></i></span>
+      <input class="inputb" type="text" name="ville" id="ville" data-rule="required"/>
+              <div class="validation"></div>
+    </div>	
+
+    <div class="form-group">
+    <p>Teléfono<span>*</span></p>	
+    <span class="icon-case"><i class="fa fa-phone"></i></span>
+      <input class="inputb" type="text" name="phone" id="phone" data-rule="maxlen:10"/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>Cargo <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-info"></i></span>
+              <input class="inputb" type="text" name="fonction" id="fonction" />
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>Asunto <span>*</span></p>	
+    <span class="icon-case"><i class="fa fa-comment-o"></i></span>
+              <input class="inputb" type="text" name="sujet" id="sujet" data-rule="required"/>
+              <div class="validation"></div>
+    </div>
+  save data -->
+
+
+  <input class="icon-case" type="checkbox" id="cbox2" value="second_checkbox" data-rule="required"> <label for="cbox2">Declaro que los datos consignados son correctos <br>y fiel expresion de la verdad.</label>
+<br>
+<br>
+<input class="icon-case" type="checkbox" id="cbox2" value="second_checkbox" data-rule="required"> <label for="cbox2">Declaro haber leido los terminos y condiciones.</label>
+</div>
+</div>
+<button type="submit" class="bouton-contact">Enviar</button>
+
+</form>	
+    </div>
+
+
+            
+            
+</body>
+
+  
+        
+<table border="0" width="100%">
+  <tr>
+  <td colspan="2">
+      <!-- linea con color naranja -->
+    <hr color="orange">
+    <!--Editar  Menu de Enlace-->
+    <center><form action="https://docs.google.com/forms/d/e/1FAIpQLSchu3u8kbSgoaOQD1DBiIwoQ6tBox9FFglb7VjMpvxfYSoECA/formResponse" target="_self" method="post">
+      <font face="verdana" color="#fff" size="7"><b>BOLETÍN DE ANUNCIOS</b></font><br><br>
+           <input class="buscadores" type="text" size="60" placeholder="Dejanos tu correo electrónico para que recibas ofertas y promociones." name="entry.1179821131" autofocus required maxlength="40">
+            <input class="subs" type="submit" value="Suscribirse"><br><br>
+           
+            
+    </form> </center>     
+  </td>  
+  
+  </tr>
+  <tr>   <!---Imagenes y Vinculos-->
+    <td>  <center> <a href="librodereclamaciones.html" target="blank"><img src="images/libroreclamo.png" width="50%"></a>
+      <a href="librodereclamaciones.html" target="blank"><p class="reclamos"><br>Libro de reclamaciones</p>
+       <a href="terminosycondiciones.html" target="blank"><p class="reclamos"><br>Terminos y Condiciones</p></center>
+   </td>
+  
+    <!-- Redes Sociales-->
+  
+  
+  
+  
+  
+    <td align="right">
+      <a href="index.html"><img src="logonekocreativo.png" width="200"></a>
+      <a href="https://facebook.com/nekocreativo" target="blank"><img src="images/facebook.png" width="5%"></a>
+    
+      <a href="https://instagram.com/neko.creativo" target="blank"><img src="images/instagram.png" width="5%"></a>
+      <a href="https://nekocreativo.com" target="blank"><img src="images/tiktok.png" width="5%"></a>
+      <a href="https://youtube.com/nekosor" target="blank"><img src="images/youtube.png" width="5%"></a></td>
+    
+    </td>
+    </tr>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    
+    <tr><td align="center" colspan="3"> <font color="#fff" face="calibri">Copyright © 2021 Neko Creativo - Todos los derechos reservados.</font></td>
+    </tr>
+    
+   
+    
+    </table>
+    
+  </body>
+  
+  
+  
+  </html>
+  

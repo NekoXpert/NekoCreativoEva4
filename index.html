@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- titulo de la web en la pestaña -->
+    <title>Neko Creativo</title>
+    <!-- favicon, icono queva al costado del <title> -->
+    <link rel="shorcut icon" href="nkfavicon.ico">
+    <link href="nekocreativo.css" rel="stylesheet" type="text/css">
+<script src="nekocreativo.js" language="javascript" type="text/javascript"></script>
+   
+</head>
+
+<header>
+
+
+<!-- logo neko creativo -->
+    <img src="logonekocreativo.png" width="20%" alt="Logo Neko Creativo" align="left">
+   
+    <!-- menu con imagenes y enlaces de forma horizontal -->
+      <nav>
+     
+        <br>
+        <a href="index.html" target="blank"><img src="menu/inicio.png" width="15%"></a>
+  <a href="servicios.html" target="blank"><img src="menu/servicios.png" width="15%"></a>
+  <a href="productos.html" target="blank"><img src="menu/productos.png" width="15%"></a>
+  <a href="testimonios.html" target="blank"><img src="menu/testimonios.png" width="15%"></a>
+  <a href="contactanos.html" target="blank"><img src="menu/contactanos.png" width="15%"></a>
+  
+  
+  </nav>
+
+<!-- linea con color naranja -->
+<hr color="orange">
+  
+<table align="right" border="0">
+  <tr>
+    
+    <td><form method="get" action="https://www.google.com/search" target="blank">
+  <input  class="buscadores" type="search" name="q" placeholder="Mouse, Memoria, etc." autofocus required maxlength="40">
+  <input  class="search" type="submit" value="Buscar"> 
+  </form></td>
+ 
+</tr>
+<td align="right"><font color="0071bc"> &#9997; &#9742; </font> <font face="calibri" size="4" color="#fff"><b>+51 912 896 572</b></font></td></tr>
+
+
+
+  </table>
+</header>
+
+<!-- cuerpo-->
+
+
+  <body>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+      <source src="videos/rain.mp4" type="video/mp4">
+    </video>
+    <p>¡Bienvenido(a) a Neko Creativo!</p>
+  
+    <div>
+   <audio id="mp3" controls autoplay>
+      <source src="audio/howdeep.mp3" type="audio/mpeg">
+    
+      </audio>
+  <script>document.getElementById("mp3").volume = 0.01;</script></div>
+  
+  <CENTER><div class="formb"><font color=white><h1>DISEÑO & ASESORÍA INFORMÁTICA</h1></font></div>
+
+</CENTER>
+<br>
+<br>
+
+
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img style="border-radius: 20px 20px 20px 20px;" src="sliders/pic1.png" style="width:100%">
+    <div class="text">PROCESADORES AMD</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img style="border-radius: 20px 20px 20px 20px;" src="sliders/pic2.png" style="width:100%">
+    <div class="text">GAMING X TRIO</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img style="border-radius: 20px 20px 20px 20px;" src="sliders/pic3.png" style="width:100%">
+    <div class="text">INTEL 12 GENERACIÓN</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img style="border-radius: 20px 20px 20px 20px;" src="sliders/pic4.png" style="width:100%">
+    <div class="text">MEMORIA RAM</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img style="border-radius: 20px 20px 20px 20px;"src="sliders/pic5.png" style="width:100%">
+    <div class="text">ARGB</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img style="border-radius: 20px 20px 20px 20px;" src="sliders/pic6.png" style="width:100%">
+    <div class="text">SSD M.2 NVMe</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7 </div>
+    <img style="border-radius: 20px 20px 20px 20px;" src="sliders/pic7.png" style="width:100%">
+    <div class="text">SSD SATA</div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center"  >
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+
+  </div>
+  <br>
+  <br>
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Cambiar tiempo entre cada imagen
+  }
+
+  var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+
+var playing = true;
+var pauseButton = document.getElementById('pause');
+
+function pauseSlideshow(){
+	pauseButton.innerHTML = 'Play';
+	playing = false;
+	clearInterval(slideInterval);
+}
+
+function playSlideshow(){
+	pauseButton.innerHTML = 'Pause';
+	playing = true;
+	slideInterval = setInterval(nextSlide,2000);
+}
+
+pauseButton.onclick = function(){
+	if(playing){ pauseSlideshow(); }
+	else{ playSlideshow(); }
+};
+
+  </script>
+
+<br>
+<br>
+
+<center>
+
+
+      
+        <div><font size="7" face="Agency FB black">¿Quiénes Somos?</font></div>
+    
+     
+
+
+        <p>Desde pequeño siempre me ha gustado la informática en todas sus ramas, <br>manejaba varios temas como, hacking ético, diseño web, <br>creación de base de datos para gestores de contenido,
+          pero mi vida tomo otro rumbo<br> cuando comenze a experimentar con el hardware y software en general.
+          
+           </p>
+      
+    </center>
+    <br>
+    <br>
+<br>
+<br>
+
+      <!--videos informativos de youtube-->
+      
+  
+  <center><iframe style="border-radius: 20px 20px 20px 20px;" width="900" height="480" src="https://www.youtube.com/embed/_pyoY3L3RZ0" title="YouTube video player" frameborder="0"  allowfullscreen></iframe></center><br>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<!--FOOTER-->
+
+
+  
+        
+  <table border="0" width="100%">
+<tr>
+<td colspan="2">
+    <!-- linea con color naranja -->
+  <hr color="orange">
+  <!--Editar  Menu de Enlace-->
+  <center><form action="https://docs.google.com/forms/d/e/1FAIpQLSchu3u8kbSgoaOQD1DBiIwoQ6tBox9FFglb7VjMpvxfYSoECA/formResponse" target="blank" method="post">
+    <font face="verdana" color="#fff" size="7"><b>BOLETÍN DE ANUNCIOS</b></font><br><br>
+         <input class="buscadores" type="text" size="60" placeholder="Dejanos tu correo electrónico para que recibas ofertas y promociones." name="entry.1179821131" autofocus required maxlength="40">
+          <input class="subs" type="submit" value="Suscribirse"><br><br>
+         
+          
+  </form> </center>     
+</td>  
+
+</tr>
+<tr>   <!---Imagenes y Vinculos-->
+  <td>  <center> <a href="librodereclamaciones.html" target="blank"><img src="images/libroreclamo.png" width="50%"></a>
+    <a href="librodereclamaciones.html" target="blank"><p class="reclamos"><br>Libro de reclamaciones</p>
+     <a href="terminosycondiciones.html" target="blank"><p class="reclamos"><br>Terminos y Condiciones</p></center>
+ </td>
+
+  <!-- Redes Sociales-->
+
+
+
+
+
+  <td align="right">
+    <a href="index.html"><img src="logonekocreativo.png" width="200"></a>
+    <a href="https://facebook.com/nekocreativo" target="blank"><img src="images/facebook.png" width="5%"></a>
+  
+    <a href="https://instagram.com/neko.creativo" target="blank"><img src="images/instagram.png" width="5%"></a>
+    <a href="https://nekocreativo.com" target="blank"><img src="images/tiktok.png" width="5%"></a>
+    <a href="https://youtube.com/nekosor" target="blank"><img src="images/youtube.png" width="5%"></a></td>
+  
+  </td>
+  </tr>
+  <br>
+  
+  <br>
+  <br>
+  <br>
+  
+  <tr><td align="center" colspan="3"> <font color="#fff" face="calibri">Copyright © 2021 Neko Creativo - Todos los derechos reservados.</font></td>
+  </tr>
+  
+ 
+  
+  </table>
+  
+</body>
+
+
+
+</html>

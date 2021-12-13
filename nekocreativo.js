@@ -1,14 +1,14 @@
 
 
 //codigo de chat bot//
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '3d6ca561aefc077b28b68c5e808c6e50daab7e29';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
+(function () {
+  var ldk = document.createElement('script');
+  ldk.type = 'text/javascript';
+  ldk.async = true;
+  ldk.src = 'https://s.cliengo.com/weboptimizer/61b74d1c92cf92002a177ace/61b74df892cf92002a177b12.js?platform=onboarding_modular';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ldk, s);
+})();
 
 
 //deshabilitar menu contextual del navegador//

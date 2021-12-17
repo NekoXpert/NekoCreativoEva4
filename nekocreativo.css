@@ -3,20 +3,27 @@
 
 /* alert javascript */
 
-#wspIframe {float:right!important;left:auto!important; right: 0px !important;}
+
 /* un pequeño efecto para mis imagenes,  incluye el menu */
 
 img:hover
 
-{filter: saturate(350%);
+{filter: saturate(200%);
 overflow:hidden;
 -webkit-transform:scale(1.1);
 transform:scale(1.1);
 }
 
+/* efecto especial para el boton blog con una saturación menor a la de los otros menu */
+.blog:hover
+{filter: saturate(55%);
+  color:rgb(0, 146, 231);
+  text-decoration: none;
+  
+  }
 
 a:hover
-{filter: saturate(150%);
+{filter: saturate(120%);
 color:rgb(0, 146, 231);
 text-decoration: none;
 
@@ -47,9 +54,10 @@ body {
   font-size: 1.2rem;
   background-color: #ffffff;
   color: rgb(255, 255, 255); 
-
+/* el webkit o el ms son codigos para hacer el estilo más compatible con algunos navegadores */
   
 }
+/* CODIGO FONDO DEL VIDEO */
 
 #background-video {
   width: 100vw;
@@ -230,7 +238,17 @@ padding: 8px;
     font-size:15px;
     margin-top:2px
   }
-  
+
+  /* CODIGO PARA CHATBOT ALA DERECHA */
+  #wspIframe {float:right!important;left:auto!important; right: 0px !important;}
+
+  /* @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    } */
+
+  /* CODIGO FORM CONTACTANOS Y TESTIMONIOS*/
   .info i {
     color:rgb(236, 183, 83);
   }
@@ -250,17 +268,19 @@ padding: 8px;
     max-width:700px;
     width:100%;
     margin: 5% auto;
-    background-color: rgb(0 0 0 / 14%);
+    background-color: rgb(0 0 0 / 40%);
     padding: 20px;
     overflow: hidden;
   }
   
+
+  /* TITULOS DE LAS PAGINAS WEB */
   .formb {
     border-radius: 15px;
     max-width:700px;
     width:100%;
     margin: 5% auto;
-    background-color: rgb(0 0 0 / 14%);
+    background-color: rgb(0 0 0 / 40%);
     padding: 20px;
     overflow: hidden;
   }
@@ -450,9 +470,7 @@ font-size: 20px;
 {margin-top: -20%;
 margin-left: 40%;}
 
-.img-testi
-{margin-top: -20%;
-margin-left: 110%;}
+
 
 /* servicios /productos */
 
@@ -476,7 +494,7 @@ margin-left: 110%;}
   font-size: 70px;
 }
 
-/* reclamos estilos */
+/* reclamos estilos PARTE BAJA ENLACE */
 .reclamos:hover {color:rgb(34, 125, 209);
  
 }
@@ -574,3 +592,221 @@ font-family:"Agency FB black";
 font-size: 70px;
 color:#ffffff;
 }
+
+
+/* ESTILOS DEL BLOG BLOG BLOG BLOG */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+/* Header/Blog Title 
+.header {
+  padding: 0px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column 
+.leftcolumn {   
+  float: left;
+  width: 75%;
+} */
+
+/* Right column 
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+} */
+
+/* Fake image 
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}*/
+
+/* efecto al articulo */
+.card {
+  background-color: rgb(0 0 0 / 50%);
+   padding: 20px;
+margin-top: 40px;
+float:left;
+   border-radius: 20px;
+  
+}
+/* efecto a la imagen del articulo*/
+.card2 {
+  background-color: rgb(0 0 0 / 50%);
+   padding: 40px;
+   margin-top: 20px;
+float:right;
+   border-radius: 20px;
+  
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* clase para img blog */
+
+.blogimg2 { 
+  padding: 20px;
+  margin-top: 20px;
+
+
+}
+
+.blogtext {
+  color: rgb(228, 228, 182);
+ text-align: left;
+}
+
+.blogtittle {
+color: rgb(219, 170, 96)
+
+}
+
+/* redes sociales para compartir */
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 404px;
+  height: 60px;
+ 
+}
+
+ul::before {
+  content: "🌟";
+ 
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(0 0 0 / 100%);
+  border-radius: 15px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 50px;
+  padding-left: 2px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+ul:hover::before {
+  width: 60px;
+}
+
+ul li {
+  position: absolute;
+  transition: 1s;
+  
+ 
+}
+
+ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #262626;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+ul li:nth-child(1) a {
+  background-color: #3b5999;
+}
+ul li:nth-child(2) a {
+  background-color: #099b28;
+}
+ul li:nth-child(3) a {
+  background-color: #0077B5;
+}
+ul li:nth-child(4) a {
+  background: linear-gradient(45deg, #df9d21, #7a0b7ed3);
+}
+
+ul li:nth-child(5) a {
+  background-color: #55acee;
+}
+ul:hover li:nth-child(1) a {
+  transform: translatex(68px) rotate(360deg);
+  transition-delay: 0.8s;
+}
+
+ul:hover li:nth-child(2) a {
+  transform: translatex(136px) rotate(360deg);
+  transition-delay: 0.6s;
+}
+
+ul:hover li:nth-child(3) a {
+  transform: translatex(204px) rotate(360deg);
+  transition-delay: 0.4s;
+}
+
+ul:hover li:nth-child(4) a {
+  transform: translatex(272px) rotate(360deg);
+  transition-delay: 0.2s;
+}
+
+ul:hover li:nth-child(5) a {
+  transform: translatex(340px) rotate(360deg);
+  transition-delay: 0s;
+}
+
+
+/* paginacion */
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion .metodo {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion .metodo {
+	display:inline-block;
+	margin-right:100px;
+}
+
+.paginacion .metodo a {
+	display:block;
+	padding:10px 10px;
+	color:#fff;
+	background:#72bdce;
+	text-decoration: none;
+}
+
+
+
+

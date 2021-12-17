@@ -1,15 +1,15 @@
 
 
 //codigo de chat bot//
+//Cliengo installation code for  www.nekocreativo.com//
 (function () {
   var ldk = document.createElement('script');
   ldk.type = 'text/javascript';
   ldk.async = true;
-  ldk.src = 'https://s.cliengo.com/weboptimizer/61b74d1c92cf92002a177ace/61b74df892cf92002a177b12.js?platform=onboarding_modular';
+  ldk.src = 'https://s.cliengo.com/weboptimizer/61b74d1c92cf92002a177ace/61bc758778d0f6002a903839.js?platform=onboarding_modular';
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(ldk, s);
 })();
-
 
 //deshabilitar menu contextual del navegador//
 
